@@ -6,6 +6,7 @@ namespace Akymos\Otp\Util;
 
 class Base32 {
 
+    /** @var array Lookup needed for Base32 encoding */
     private static $lut = array(
         "A" => 0,	"B" => 1,
         "C" => 2,	"D" => 3,
@@ -25,6 +26,14 @@ class Base32 {
         "6" => 30,	"7" => 31
     );
 
+    /**
+     * Decodes a base32 string into a binary string.
+     *
+     * @param $b32
+     *
+     * @return string
+     * @throws \Exception
+     */
     public static function decode($b32) {
         $b32 	= strtoupper($b32);
 
