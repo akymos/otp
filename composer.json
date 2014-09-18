@@ -1,0 +1,27 @@
+{
+    "name": "akymos/otp",
+    "type": "library",
+    "description": "PHP library that enable otp auth (2-step verification)",
+    "keywords": ["otp","2 factor","2-step verification","2-step"],
+    "homepage": "http://github.com/akymos/otp",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Akymos",
+            "email": "djakymos@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "http://github.com/akymos/otp/issues",
+        "source": "http://github.com/akymos/otp"
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "endroid/qrcode": "1.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Akymos\\Otp\\": "src/"
+        }
+    }
+}
